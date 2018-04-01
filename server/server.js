@@ -7,7 +7,8 @@ var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
 
 var app = express();
-const port = process.enve.PORT || 3000;
+const port = 'mongodb://<dbuser>:<dbpassword>@ds131329.mlab.com:31329/learning'
+              || 3000;
 
 app.use(bodyParser.json());
 
